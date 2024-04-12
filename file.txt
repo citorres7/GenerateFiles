@@ -1,0 +1,3 @@
+DocumentTypeSeller;SellerDocumentNumber.
+Otra línea con más información.
+ProductID1;QuantitySoldProduct1;ProductID2;QuantitySoldProduct2;ProductID3;QuantitySoldProduct3;
