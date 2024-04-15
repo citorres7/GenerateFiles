@@ -6,17 +6,17 @@ import java.util.Random;
 public class GenerateInfoFiles {
     public static void main(String[] args) {
         try {
-            // crear archivos
+            // create files
             createSalesMenFile(10, "SalesmanInfo.txt");
             createProductsFile(20, "ProductsInfo.txt");
 
-            System.out.println("Archivos generados exitosamente.");
+            System.out.println("Files generated successfully.");
         } catch (IOException e) {
-            System.err.println("Error al generar archivos: " + e.getMessage());
+            System.err.println("Error generating files: " + e.getMessage());
         }
     }
 
-    // método para generar archivo de información de vendedores aleatorios
+    // Method to generate random seller information files.
     private static void createSalesMenFile(int salesmanCount, String fileName) throws IOException {
         Random random = new Random();
         try (PrintWriter writer = new PrintWriter(new FileWriter(fileName))) {
@@ -33,7 +33,7 @@ public class GenerateInfoFiles {
         }
     }
 
-    // método para generar archivo de información de productos aleatorios
+    // method to generate random product information file
     private static void createProductsFile(int productCount, String fileName) throws IOException {
         Random random = new Random();
         try (PrintWriter writer = new PrintWriter(new FileWriter(fileName))) {
